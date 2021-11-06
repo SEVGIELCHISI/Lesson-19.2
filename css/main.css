@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(197, 144, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.box1{
+    width: 0px;
+    height: 0px;
+     
+    position: absolute;
+    z-index: 1;
+    animation: Wepro;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
+
+
+}
+.box2{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 2;
+    
+    animation: Wepro;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+.box3{
+    width: 0;
+    height: 0;
+     
+    position: absolute;
+    z-index: 3;
+    animation: Wepro;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes Wepro{
+    from{
+        transform: scale(0.2);
+        border: 20px solid white;
+        border-radius: 50%;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+        border: 20px solid rgba(235, 225, 225, 0);
+        border-radius: 50%;
+
+    }
+}
+
